@@ -187,7 +187,7 @@ class _Event<T> extends Disposable {
   final Function _onEvent;
     
   StreamController<T> _s;
-  js.JsFunction _cb;
+  Function _cb;
   
   Stream<T> get stream {
     if (_s == null) {
